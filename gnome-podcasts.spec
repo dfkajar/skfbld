@@ -45,7 +45,6 @@ Requires:       openssl
 %meson_build -j 1
 
 %install
-cd %{_builddir}/podcasts
 %meson_install
 
 %files
