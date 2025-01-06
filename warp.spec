@@ -11,6 +11,7 @@ BuildRequires:  gtk4-devel
 BuildRequires:  libadwaita-devel
 BuildRequires:  rust
 BuildRequires:  gstreamer1-devel
+BuildRequires:  gstreamer1-plugins-base-devel
 BuildRequires:  cargo
 BuildRequires:	cmake
 BuildRequires:  hicolor-icon-theme
