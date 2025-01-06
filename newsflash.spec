@@ -1,6 +1,6 @@
 Name:           newsflash
-Version:        3.3.4
-Release:        2%{?dist}
+Version:        3.3.5
+Release:        1%{?dist}
 Summary:        Follow your favorite blogs & news sites.
 License:        GPL-3.0
 URL:            https://gitlab.com/news-flash/news_flash_gtk
@@ -20,7 +20,6 @@ BuildRequires:  xdg-utils
 BuildRequires:  blueprint-compiler
 BuildRequires:  clapper-devel
 BuildRequires:  webkitgtk6.0-devel
-BuildRequires:  libmicrodns
 BuildRequires:  libmicrodns-devel
 
 Requires:       webkitgtk6.0
@@ -35,19 +34,13 @@ Requires:       libmicrodns
 
 
 %prep
-cd %{_builddir}/
-git clone https://gitlab.com/news-flash/news_flash_gtk.git
-cd %{_builddir}/news_flash_gtk
-git checkout ed5773bf225659e62f262dd08bbad6f9a5304a92
+%autosetup
 
 %build
-export RUSTFLAGS="%build_rustflags"
-cd news_flash_gtk
 %meson
 %meson_build
 
 %install
-cd news_flash_gtk*
 %meson_install
 
 %files

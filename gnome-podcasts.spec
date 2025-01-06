@@ -1,4 +1,4 @@
-Name:           gnome-podcasts
+Name:           podcasts
 Version:        0.7.1
 Release:        1%{?dist}
 Summary:        Listen to your favorite podcasts, right from your desktop.
@@ -14,11 +14,6 @@ BuildRequires:  rust
 BuildRequires:  cargo
 BuildRequires:  glib
 BuildRequires:  gstreamer1-devel
-BuildRequires:  gstreamer1-plugins-base-devel
-BuildRequires:  gstreamer1-plugins-bad-free-devel
-BuildRequires:  gstreamer1-plugins-base gstreamer1-plugins-base-devel
-BuildRequires:  gstreamer1-plugins-good gstreamer1-plugins-good-extras
-BuildRequires:  gstreamer1-vaapi gstreamer1
 BuildRequires:  rust-openssl-devel
 BuildRequires:  cmake
 BuildRequires:  pkgconf-pkg-config
@@ -37,18 +32,13 @@ Requires:       openssl
 %description
 
 %prep
-cd %{_builddir}/
-git clone --recurse-submodules https://gitlab.gnome.org/World/podcasts.git
-cd %{_builddir}/podcasts
-git checkout f1cfdc61198c920c3be4e3a75f3c7311d0e528ce
+%autosetup
 
 %build
-cd %{_builddir}/podcasts
 %meson --buildtype release
 %meson_build -j 1
 
 %install
-cd %{_builddir}/podcasts
 %meson_install
 
 %files

@@ -1,5 +1,5 @@
-Name:           curtail
-Version:        1.10.0
+Name:           Curtail
+Version:        1.12.0
 Release:        1%{?dist}
 Summary:        Simple & useful image compressor.
 License:        GPL-3.0
@@ -13,8 +13,6 @@ BuildRequires:  libadwaita-devel
 BuildRequires:  python3
 BuildRequires:  desktop-file-utils
 
-Requires:       libadwaita
-Requires:       gtk4
 Requires:       gtk4
 Requires:       libadwaita
 Requires:       oxipng	
@@ -27,18 +25,13 @@ Requires:       python3-scour
 
 
 %prep
-cd %{_builddir}/
-git clone --recurse-submodules https://github.com/Huluti/Curtail
-cd Curtail
-git checkout e8585466ada792fdb685891609a2665cd893d0c7
+%autosetup
 
 %build
-cd Curtail
 %meson --buildtype release
 %meson_build -j 1
 
 %install
-cd Curtail*
 %meson_install
 
 %files
