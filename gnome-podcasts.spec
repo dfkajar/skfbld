@@ -9,7 +9,7 @@ Source0:        https://gitlab.gnome.org/World/podcasts/-/archive/%{version}/pod
 BuildRequires:  git
 BuildRequires:  meson
 BuildRequires:  gtk4-devel
-BuildRequires:  libadwaita-devel
+BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  rust
 BuildRequires:  cargo
 BuildRequires:  glib
