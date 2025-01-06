@@ -1,4 +1,4 @@
-Name:           Authenticator
+Name:           authenticator
 Version:        4.5.0
 Release:        1%{?dist}
 Summary:        Generate Two-Factor Codes
@@ -34,7 +34,7 @@ Requires:       gstreamer1-plugins-good
 %description
 
 %prep
-%setup
+%setup -n Authenticator
 
 %build
 %meson

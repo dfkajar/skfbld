@@ -1,5 +1,5 @@
 %global debug_package %{nil}
-Name:           Curtail
+Name:           curtail
 Version:        1.12.0
 Release:        1%{?dist}
 Summary:        Simple & useful image compressor.
@@ -26,7 +26,7 @@ Requires:       python3-scour
 
 
 %prep
-%autosetup
+%setup -n Curtail
 
 %build
 %meson --buildtype release
