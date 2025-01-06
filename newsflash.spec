@@ -37,8 +37,9 @@ Requires:       libmicrodns
 %setup -n news_flash_gtk-v.%{version}
 
 %build
-%meson
-%meson_build
+export RUSTFLAGS="%build_rustflags"
+%meson --buildtype release
+%meson_build -j 1
 
 %install
 %meson_install
