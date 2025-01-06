@@ -48,7 +48,7 @@ Requires:       openssl
 %meson_install
 
 %files
-%{_bindir}/%{name}
+%{_bindir}/Podcasts
 %{_datadir}/applications/org.gnome.Podcasts.desktop
 %{_datadir}/dbus-1/services/org.gnome.Podcasts.service
 %{_datadir}/glib-2.0/schemas/org.gnome.Podcasts.gschema.xml
