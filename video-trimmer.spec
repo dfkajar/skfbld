@@ -14,13 +14,6 @@ BuildRequires:  glib2-devel
 BuildRequires:  gtk4-devel
 Buildrequires:  libadwaita-devel
 BuildRequires:  gstreamer1-devel
-BuildRequires:  gstreamer1-plugins-bad-free-devel
-BuildRequires:  gstreamer1-plugins-base-devel
-BuildRequires:  gstreamer1-plugins-good-extras
-BuildRequires:  gstreamer1-vaapi
-BuildRequires:  gstreamer1-plugins-good 
-BuildRequires:  gstreamer1-plugins-base
-BuildRequires:  gstreamer1-vaapi 
 BuildRequires:  desktop-file-utils
 BuildRequires:	libappstream-glib
 BuildRequires:	blueprint-compiler
