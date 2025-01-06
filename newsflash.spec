@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:           newsflash
 Version:        3.3.5
 Release:        1%{?dist}
