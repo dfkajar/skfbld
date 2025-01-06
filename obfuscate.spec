@@ -24,18 +24,13 @@ Requires:	libadwaita
 %description
 
 %prep
-cd %{_builddir}/
-git clone --recurse-submodules https://gitlab.gnome.org/World/obfuscate.git
-cd obfuscate
-git checkout 08e4d8f60037402afbc8f61f1eeabc62c86bccf0
+%autosetup
 
 %build
-cd obfuscate
 %meson
 %meson_build
 
 %install
-cd obfuscate*
 %meson_install
 
 %files

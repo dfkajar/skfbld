@@ -1,5 +1,5 @@
 Name:           warp
-Version:        0.7.0
+Version:        0.8.0
 Release:        1%{?dist}
 Summary:        Fast and secure file transfer
 License:        GPL-3.0
@@ -27,18 +27,13 @@ Requires:       hicolor-icon-theme
 %description
 
 %prep
-cd %{_builddir}/
-git clone --recurse-submodules https://gitlab.gnome.org/World/warp.git
-cd warp
-git checkout 1daa60691aa1a697acaff55450dcccb085023fc7
+%autosetup
 
 %build
-cd warp
 %meson
 %meson_build
 
 %install
-cd warp*
 %meson_install
 
 %files

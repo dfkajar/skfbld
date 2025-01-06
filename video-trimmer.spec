@@ -1,5 +1,5 @@
 Name:           video-trimmer
-Version:        0.8.2
+Version:        0.9.0
 Release:        1%{?dist}
 Summary:        Trim videos quickly
 License:        GPL-3.0
@@ -25,18 +25,13 @@ Requires:       libadwaita
 %description
 
 %prep
-cd %{_builddir}/
-git clone --recurse-submodules https://gitlab.gnome.org/YaLTeR/video-trimmer.git
-cd video-trimmer
-git checkout 68c7a71f6e0e6e2b3a69aee3985089db597a385c
+%autosetup
 
 %build
-cd video-trimmer
-%meson --buildtype release
-%meson_build -j 1
+%meson
+%meson_build 
 
 %install
-cd video-trimmer*
 %meson_install
 
 %files
