@@ -11,7 +11,13 @@ BuildRequires:  gtk4-devel
 BuildRequires:  libadwaita-devel
 BuildRequires:  rust
 BuildRequires:  gstreamer1-devel
+BuildRequires:  gstreamer1-plugins-bad-free-devel
 BuildRequires:  gstreamer1-plugins-base-devel
+BuildRequires:  gstreamer1-plugins-good-extras
+BuildRequires:  gstreamer1-vaapi
+BuildRequires:  gstreamer1-plugins-good 
+BuildRequires:  gstreamer1-plugins-base
+BuildRequires:  gstreamer1-vaapi 
 BuildRequires:  cargo
 BuildRequires:	cmake
 BuildRequires:  hicolor-icon-theme
