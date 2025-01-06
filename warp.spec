@@ -27,7 +27,7 @@ Requires:       hicolor-icon-theme
 %description
 
 %prep
-%autosetup
+%setup -n warp-v 
 
 %build
 %meson

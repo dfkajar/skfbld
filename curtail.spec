@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:           Curtail
 Version:        1.12.0
 Release:        1%{?dist}

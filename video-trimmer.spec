@@ -25,7 +25,7 @@ Requires:       libadwaita
 %description
 
 %prep
-%autosetup
+%setup -n video-trimmer-v
 
 %build
 %meson

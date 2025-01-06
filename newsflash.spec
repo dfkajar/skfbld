@@ -34,7 +34,7 @@ Requires:       libmicrodns
 
 
 %prep
-%autosetup
+%setup -n news-flash-gtk-v.
 
 %build
 %meson

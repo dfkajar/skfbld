@@ -14,12 +14,18 @@ BuildRequires:  rust
 BuildRequires:  cargo
 BuildRequires:  glib
 BuildRequires:  gstreamer1-devel
+BuildRequires:  gstreamer1-plugins-base-devel
+BuildRequires:  gstreamer1-plugins-bad-free-devel
+BuildRequires:  gstreamer1-plugins-base gstreamer1-plugins-base-devel
+BuildRequires:  gstreamer1-plugins-good gstreamer1-plugins-good-extras
+BuildRequires:  gstreamer1-vaapi gstreamer1
 BuildRequires:  rust-openssl-devel
 BuildRequires:  cmake
 BuildRequires:  pkgconf-pkg-config
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
 BuildRequires:  dbus-devel
+BuildRequires:  sqlite
 
 Requires:       gtk4
 Requires:       libadwaita
@@ -39,6 +45,7 @@ Requires:       openssl
 %meson_build -j 1
 
 %install
+cd %{_builddir}/podcasts
 %meson_install
 
 %files
