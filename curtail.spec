@@ -26,7 +26,7 @@ Requires:       python3-scour
 
 
 %prep
-%setup -n Curtail
+%setup -n Curtail-%{version}
 
 %build
 %meson --buildtype release

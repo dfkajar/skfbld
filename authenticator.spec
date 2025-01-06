@@ -34,7 +34,7 @@ Requires:       gstreamer1-plugins-good
 %description
 
 %prep
-%setup -n Authenticator
+%setup -n Authenticator-%{version}
 
 %build
 %meson
