@@ -13,6 +13,7 @@ BuildRequires:  cargo
 BuildRequires:  glib2-devel
 BuildRequires:  gtk4-devel
 Buildrequires:  libadwaita-devel
+BuildRequires:  gstreamer1-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:	libappstream-glib
 BuildRequires:	blueprint-compiler
