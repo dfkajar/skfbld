@@ -46,6 +46,7 @@ Requires:       hicolor-icon-theme
 
 %files
 %{_bindir}/warp
+%{_datadir}/warp/licenses.json
 %{_datadir}/applications/app.drey.Warp.desktop
 %{_datadir}/help/*/warp/*.page
 %{_datadir}/icons/hicolor/scalable/apps/app.drey.Warp.svg
