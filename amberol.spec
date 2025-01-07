@@ -61,3 +61,4 @@ A GNOME music player
 %{_datadir}/locale/*/LC_MESSAGES/amberol.mo
 
 %changelog
+* Mon Jan 07 2025 sunrise2011
