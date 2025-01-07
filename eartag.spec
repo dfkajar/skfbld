@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:       	eartag
 Version:    	0.6.3
 Release:    	1%{?dist}

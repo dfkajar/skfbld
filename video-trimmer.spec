@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:           video-trimmer
 Version:        0.9.0
 Release:        1%{?dist}

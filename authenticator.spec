@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:           authenticator
 Version:        4.5.0
 Release:        1%{?dist}

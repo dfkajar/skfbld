@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:           amberol
 Version:        2024.2 
 Release:        1

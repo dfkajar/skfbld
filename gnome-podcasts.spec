@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:           podcasts
 Version:        0.7.1
 Release:        1%{?dist}

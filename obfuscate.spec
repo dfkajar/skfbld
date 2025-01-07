@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:		obfuscate
 Version:	0.0.10
 Release:	1%{?dist}
