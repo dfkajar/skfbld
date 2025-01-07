@@ -26,7 +26,7 @@ Requires:       python3-mutagen
 Requires:       python3-eyed3
 Requires:       python3-pytaglib
 Requires:       python3-pillow
-Requires:       pygobject2
+Requires:       pkgconfig(pygobject)
 Requires:       python3-file-magic
 Requires:       python3-acoustid
 
