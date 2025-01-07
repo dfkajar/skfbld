@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 Name:           warehouse
 Version:        2.0.1-1
 Release:        1%{?dist}
