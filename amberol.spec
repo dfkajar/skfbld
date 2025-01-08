@@ -62,3 +62,4 @@ A GNOME music player
 
 %changelog
 * Mon Jan 07 2025 sunrise2011
+- First build
