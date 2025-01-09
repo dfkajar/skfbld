@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:           warehouse
-Version:        2.0.1-1
+Version:        2.0.1.1
 Release:        1%{?dist}
 Summary:        A versatile toolbox for viewing flatpak info, managing user data, and batch managing installed flatpaks
 License:        GPL-3.0
