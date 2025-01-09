@@ -27,7 +27,7 @@ Requires:       python3
 %description
 
 %prep
-%setup
+%setup -n warehouse-%{version}	
 
 %build
 %meson --buildtype release
