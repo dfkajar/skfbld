@@ -53,7 +53,8 @@ A GNOME music player
 %files
 %{_bindir}/amberol
 %{_datadir}/amberol/amberol.gresource
-#%{_datadir}/appdata/io.bassi.Amberol.appdata.xml
+%{_datadir}/metainfo/io.bassi.Amberol.metainfo.xml
+%{_datadir}/glib-2.0/schemas/io.bassi.Amberol.gschema.xml
 %{_datadir}/applications/io.bassi.Amberol.desktop
 %{_datadir}/dbus-1/services/io.bassi.Amberol.service
 %{_datadir}/icons/hicolor/scalable/apps/io.bassi.Amberol.svg
