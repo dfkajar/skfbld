@@ -12,7 +12,7 @@ BuildRequires:  git
 BuildRequires:  meson
 BuildRequires:  cargo
 BuildRequires:  gtk4-devel
-BuildRequires:  pygobject2-devel
+BuildRequires:  python3-gobject
 BuildRequires:  python3-pillow-devel
 BuildRequires:  python3-file-magic
 BuildRequires:  desktop-file-utils
@@ -26,7 +26,7 @@ Requires:       python3-mutagen
 Requires:       python3-eyed3
 Requires:       python3-pytaglib
 Requires:       python3-pillow
-Requires:       pkgconfig(pygobject)
+Requires:       python3-gobject
 Requires:       python3-file-magic
 Requires:       python3-acoustid
 
