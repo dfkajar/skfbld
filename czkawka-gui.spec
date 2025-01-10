@@ -15,6 +15,7 @@ BuildRequires:  cargo
 BuildRequires:  libheif-devel
 BuildRequires:  LibRaw-devel
 BuildRequires:  ffmpeg-free-devel
+BuildRequires:  gcc-c++
 
 Requires:       gtk4
 Requires:       ffmpeg-free
