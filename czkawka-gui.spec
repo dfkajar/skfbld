@@ -17,7 +17,7 @@ BuildRequires:  LibRaw-devel
 BuildRequires:  ffmpeg-devel
 
 Requires:       gtk4
-Requires:       ffmpeg
+Requires:       ffmpeg-free
 Requires:       libheif
 Requires:       LibRaw
 
