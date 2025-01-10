@@ -14,7 +14,7 @@ BuildRequires:  rust
 BuildRequires:  cargo
 BuildRequires:  libheif-devel
 BuildRequires:  LibRaw-devel
-BuildRequires:  ffmpeg-devel
+BuildRequires:  ffmpeg
 
 Requires:       gtk4
 Requires:       ffmpeg
