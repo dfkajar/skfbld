@@ -31,7 +31,7 @@ Requires:       python3
 
 %build
 %meson --buildtype release
-%meson_build -j 1
+%meson_build
 
 %install
 %meson_install
