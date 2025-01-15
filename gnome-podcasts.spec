@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:           podcasts
-Version:        0.7.1
+Version:        0.7.2
 Release:        1%{?dist}
 Summary:        Listen to your favorite podcasts, right from your desktop.
 License:        GPL-3.0
