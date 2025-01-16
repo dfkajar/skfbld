@@ -4,10 +4,9 @@ Version:        0.7.2
 Release:        1%{?dist}
 Summary:        Listen to your favorite podcasts, right from your desktop.
 License:        GPL-3.0
-URL:            https://apps.gnome.org/Podcasts/
-Source0:        https://gitlab.gnome.org/World/podcasts/-/archive/%{version}/podcasts-%{version}.tar.gz
+URL:            https://apps.gnome.org/Podcasts
+Source0:        %{url}/podcasts/-/archive/%{version}/podcasts-%{version}.tar.gz
 
-BuildRequires:  git
 BuildRequires:  meson
 BuildRequires:  rust
 BuildRequires:  cargo

@@ -13,6 +13,7 @@ BuildRequires:  libadwaita-devel
 BuildRequires:  rust
 BuildRequires:  cargo
 BuildRequires:	cmake
+BuildRequires:	desktop-file-utils
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig(gtk4) >= 4.16.0
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.5
@@ -28,6 +29,7 @@ BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 Requires:       libadwaita
 Requires:       gtk4
 Requires:       hicolor-icon-theme
+Requires:	desktop-file-utils
 Requires:       gstreamer1
 Requires:       gstreamer1-plugins-base
 Requires:       gstreamer1-plugins-good
