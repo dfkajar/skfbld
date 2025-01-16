@@ -4,8 +4,8 @@ Version:        2024.2
 Release:        1
 Summary:        Simple and modern GNOME music player
 License:        GPL-3.0
-Source0:        https://gitlab.gnome.org/World/amberol/-/archive/%{version}/amberol-%{version}.tar.gz
-URL:            https://gitlab.gnome.org/World/amberol.git
+URL:            https://gitlab.gnome.org/World/amberol
+Source0:        %{url}/-/archive/%{version}/amberol-%{version}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  gtk4-devel
@@ -14,14 +14,16 @@ BuildRequires:  rust
 BuildRequires:  cargo
 BuildRequires:	cmake
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  desktop-file-utils
-BuildRequires:	reuse
-BuildRequires:  dbus-devel
-BuildRequires:  pkgconf-pkg-config
-BuildRequires:  gstreamer1-devel
-BuildRequires:  gstreamer1-plugins-base-devel
-BuildRequires:  gstreamer1-plugins-bad-free-devel
-BuildRequires:  git
+BuildRequires:  pkgconfig(gtk4) >= 4.16.0
+BuildRequires:  pkgconfig(libadwaita-1) >= 1.5
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gstreamer-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-audio-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-play-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-plugins-base-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-plugins-bad-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-bad-audio-1.0) >= 1.20
+BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 
 Requires:       libadwaita
 Requires:       gtk4

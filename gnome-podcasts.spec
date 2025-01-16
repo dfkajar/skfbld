@@ -9,23 +9,22 @@ Source0:        https://gitlab.gnome.org/World/podcasts/-/archive/%{version}/pod
 
 BuildRequires:  git
 BuildRequires:  meson
-BuildRequires:  gtk4-devel
-BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  rust
 BuildRequires:  cargo
-BuildRequires:  glib
-BuildRequires:  gstreamer1-devel
-BuildRequires:  gstreamer1-plugins-base-devel
-BuildRequires:  gstreamer1-plugins-bad-free-devel
-BuildRequires:  gstreamer1-plugins-base gstreamer1-plugins-base-devel
-BuildRequires:  gstreamer1-plugins-good gstreamer1-plugins-good-extras
-BuildRequires:  gstreamer1-vaapi gstreamer1
-BuildRequires:  rust-openssl-devel
-BuildRequires:  cmake
 BuildRequires:  pkgconf-pkg-config
+BuildRequires:  pkgconfig(gtk4) >= 4.16.0
+BuildRequires:  pkgconfig(libadwaita-1) >= 1.5
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gstreamer-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-audio-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-play-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-plugins-base-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-plugins-bad-1.0) >= 1.20
+BuildRequires:  pkgconfig(gstreamer-bad-audio-1.0) >= 1.20
+BuildRequires:  rust-openssl-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
-BuildRequires:  dbus-devel
+BuildRequires:  pkgconfig(libappstream)
 BuildRequires:  sqlite
 
 Requires:       gtk4
