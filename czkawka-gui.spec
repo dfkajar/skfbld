@@ -29,15 +29,16 @@ Czkawka (tch•kav•ka (IPA: [ˈʧ̑kafka]), "hiccup" in Polish) is a simple, f
 %setup
 
 %build
-cargo run --release --bin czkawka_gui --features "heif,libraw"
+cargo build --release --bin czkawka_gui --features "heif,libraw"
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}
-install -m 0755 target/release/czkawka %{buildroot}%{_bindir}/%{name}
+install -m 0755 target/release/%{name} %{buildroot}%{_bindir}/%{name}
 
 %files
 %license add-license-file-here
 %doc add-docs-here
+%{_bindir}/czkawka-gui
 
 %changelog
 * Sun Jun 30 2024 dfkajar <dfkajar@gmail.com>
