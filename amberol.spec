@@ -15,7 +15,7 @@ BuildRequires:  cargo
 BuildRequires:	cmake
 BuildRequires:	desktop-file-utils
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  pkgconfig(gtk4)
+BuildRequires:  pkgconfig(gtk4) >= 4.16.0
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.5
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gstreamer-1.0) >= 1.20
