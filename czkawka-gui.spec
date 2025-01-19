@@ -34,11 +34,19 @@ cargo build --release --bin czkawka_gui --features "heif,libraw"
 %install
 install -d -m 0755 %{buildroot}%{_bindir}
 install -m 0755 %{builddir}/%{name}-%{version}/target/release/czkawka_gui %{buildroot}%{_bindir}/czkawka-gui
+install -m 0755 %{builddir}/%{name}-%{version}/data/com.github.qarmin.czkawka.desktop %{buildroot}/%{_datadir}/applications/com.github.qarmin.czkawka.desktop
+install -m 0755 %{builddir}/%{name}-%{version}/data/com.github.qarmin.czkawka.metainfo.xml %{buildroot}/%{_datadir}/metainfo/com.github.qarmin.czkawka.metainfo.xml
+install -m 0755 %{builddir}/%{name}-%{version}/data/icons/com.github.qarmin.czkawka.svg %{buildroot}/%{_datadir}/icons/hicolor/scalable/com.github.qarmin.czkawka.svg
+install -m 0755 %{builddir}/%{name}-%{version}/data/icons/com.github.qarmin.czkawka-symbolic.svg %{buildroot}/%{_datadir}/icons/hicolor/symbolic/com.github.qarmin.czkawka-symbolic.svg
 
 %files
-%license add-license-file-here
-%doc add-docs-here
+# %license add-license-file-here
+# %doc add-docs-here
 %{_bindir}/czkawka_gui
+%{_datadir}/metainfo/com.github.qarmin.czkawka.metainfo.xml
+%{_datadir}/applications/com.github.qarmin.czkawka.desktop
+%{_datadir}/icons/hicolor/scalable/com.github.qarmin.czkawka.svg
+%{_datadir}/icons/hicolor/symbolic/com.github.qarmin.czkawka-symbolic.svg
 
 %changelog
 * Sun Jun 30 2024 dfkajar <dfkajar@gmail.com>
