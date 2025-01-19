@@ -33,12 +33,12 @@ cargo build --release --bin czkawka_gui --features "heif,libraw"
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}
-install -m 0755 %{builddir}/target/release/czkawka-gui %{buildroot}%{_bindir}/czkawka-gui
+install -m 0755 %{builddir}/%{name}-%{version}/target/release/czkawka_gui %{buildroot}%{_bindir}/czkawka-gui
 
 %files
 %license add-license-file-here
 %doc add-docs-here
-%{_bindir}/czkawka-gui
+%{_bindir}/czkawka_gui
 
 %changelog
 * Sun Jun 30 2024 dfkajar <dfkajar@gmail.com>
