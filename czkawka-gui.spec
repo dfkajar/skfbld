@@ -32,13 +32,13 @@ Czkawka (tch•kav•ka (IPA: [ˈʧ̑kafka]), "hiccup" in Polish) is a simple, f
 cargo build --release --bin czkawka_gui --features "heif,libraw"
 
 %install
-install -d -m 0755 %{buildroot}%{_bindir}
-install -m 0755 %{builddir}/%{name}-%{version}/target/release/czkawka_gui %{buildroot}%{_bindir}/czkawka-gui
-install -d -m 0755 %{buildroot}%{_datadir}
-install -m -T 0755 %{buildroot}%{_datadir}/applications/com.github.qarmin.czkawka.desktop
-install -m -T 0755 %{builddir}/%{name}-%{version}/data/com.github.qarmin.czkawka.metainfo.xml %{buildroot}%{_datadir}/metainfo/com.github.qarmin.czkawka.metainfo.xml
-install -m -T 0755 %{builddir}/%{name}-%{version}/data/icons/com.github.qarmin.czkawka.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/com.github.qarmin.czkawka.svg
-install -m -T 0755 %{builddir}/%{name}-%{version}/data/icons/com.github.qarmin.czkawka-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/symbolic/com.github.qarmin.czkawka-symbolic.svg
+%__install -D -m 0755 %{buildroot}%{_bindir}
+%__install -D -m 0755 %{builddir}/%{name}-%{version}/target/release/czkawka_gui %{buildroot}%{_bindir}/czkawka-gui
+%__install -D -m 0755 %{buildroot}%{_datadir}
+%__install -D -m 0755 %{buildroot}%{_datadir}/applications/com.github.qarmin.czkawka.desktop
+%__install -D -m 0755 %{builddir}/%{name}-%{version}/data/com.github.qarmin.czkawka.metainfo.xml %{buildroot}%{_datadir}/metainfo/com.github.qarmin.czkawka.metainfo.xml
+%__install -D -m 0755 %{builddir}/%{name}-%{version}/data/icons/com.github.qarmin.czkawka.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/com.github.qarmin.czkawka.svg
+%__install -D -m 0755 %{builddir}/%{name}-%{version}/data/icons/com.github.qarmin.czkawka-symbolic.svg %{buildroot}%{_datadir}/icons/hicolor/symbolic/com.github.qarmin.czkawka-symbolic.svg
 
 %files
 # %license add-license-file-here
