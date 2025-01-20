@@ -32,7 +32,7 @@ Czkawka (tch•kav•ka (IPA: [ˈʧ̑kafka]), "hiccup" in Polish) is a simple, f
 cargo build --release --bin czkawka_gui --features "heif,libraw"
 
 %install
-%__install -D -m 0755 %{buildroot}%{_bindir}
+%__install -d -m 0755 %{buildroot}%{_bindir}
 %__install -D -m 0755 %{builddir}/%{name}-%{version}/target/release/czkawka_gui %{buildroot}%{_bindir}/czkawka-gui
 %__install -D -m 0755 %{buildroot}%{_datadir}
 %__install -D -m 0755 %{buildroot}%{_datadir}/applications/com.github.qarmin.czkawka.desktop
