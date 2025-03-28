@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:           authenticator
-Version:        4.5.0
+Version:        4.6.2
 Release:        1%{?dist}
 Summary:        Generate Two-Factor Codes
 License:        GPL-3.0
