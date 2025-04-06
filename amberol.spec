@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:           amberol
-Version:        2024.2 
+Version:        202.1
 Release:        1
 Summary:        Simple and modern GNOME music player
 License:        GPL-3.0

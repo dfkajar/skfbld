@@ -20,11 +20,10 @@ BuildRequires:  pkgconfig(gstreamer-play-1.0) >= 1.20
 BuildRequires:  pkgconfig(gstreamer-plugins-base-1.0) >= 1.20
 BuildRequires:  pkgconfig(gstreamer-plugins-bad-1.0) >= 1.20
 BuildRequires:  pkgconfig(gstreamer-bad-audio-1.0) >= 1.20
-BuildRequires:  dbus-devel
 BuildRequires:  rust-openssl-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
-BuildRequires:  libappstream-glib
+BuildRequires:  pkgconfig(libappstream)
 BuildRequires:  sqlite
 
 Requires:       gtk4
